@@ -15,7 +15,7 @@ import cn.refactor.lib.colordialog.PromptDialog;
 
 public class ChildView extends AppCompatActivity {
     SQLiteDatabase myDB = null;
-    String TableName = "dbTable10";
+    String TableName = "dbTable9";
     public static final String CHILD_INDEX = "-1";
     Activity activity;
     String child_index;
@@ -71,24 +71,26 @@ public class ChildView extends AppCompatActivity {
                 int Age_index = c.getColumnIndex("Age");
                 int Interests_index = c.getColumnIndex("Interests");
                 int Genres_index = c.getColumnIndex("Genres");
-                int ProfileImage_index = c.getColumnIndex("picture");
+//                int ProfileImage_index = c.getColumnIndex("picture");
                 age = c.getInt(Age_index);
                 childName = c.getString(Name_index);
                 interests = c.getString(Interests_index);
                 genres = c.getString(Genres_index);
-                profieImage = c.getString(ProfileImage_index);
+                //profieImage = c.getString(ProfileImage_index);
                 System.out.println("Child age: " + age);
                 System.out.println("Child Name: " + childName);
                 nameAndAgeText.setText(childName + ", " + age);
                 descriptionText.setText("Interests: " +  interests + "\n" + "Favorite Genres: " + genres );
                 wishListButton.setText("Check out " + childName + "'s " + "wishlist");
+                System.out.println("Here");
 
-                ImageView profile = (ImageView) findViewById(R.id.childImage);
+
+                /*ImageView profile = (ImageView) findViewById(R.id.childImage);
 
                 int resID = getResources().getIdentifier(profieImage , "drawable", getPackageName());
 
                 profile.setBackgroundResource(resID);
-
+*/
             }
 
         } catch (Exception e) {

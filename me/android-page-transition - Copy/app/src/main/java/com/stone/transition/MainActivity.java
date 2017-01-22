@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     };
 
     SQLiteDatabase myDB = null;
-    String TableName = "dbTable10";
+    String TableName = "dbTable9";
     String[] tempBooks = new String[4];
     String[] tempAuthors = new String[4];
     String Data = "";
