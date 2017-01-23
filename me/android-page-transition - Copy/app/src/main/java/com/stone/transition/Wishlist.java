@@ -80,7 +80,7 @@ public class Wishlist extends FragmentActivity {
     private final String[] indexArray = {"0", "1", "2", "3", "4"};
 
     SQLiteDatabase myDB = null;
-    String TableName = "dbTable9";
+    String TableName = "dbTable100";
 
     String Data = "";
 
